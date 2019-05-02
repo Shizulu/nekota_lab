@@ -2,15 +2,25 @@
   "name": "nekota_lab",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^4.0.2",
+    "gulp": "^4.0.1"
+  },
+  "devDependencies": {
+    "tar": "^4.4.8"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shizulu/nekota_lab.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^4.0.1",
-    "gulp-sass": "^4.0.2"
-  }
+  "bugs": {
+    "url": "https://github.com/Shizulu/nekota_lab/issues"
+  },
+  "homepage": "https://github.com/Shizulu/nekota_lab#readme"
 }
