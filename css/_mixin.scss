@@ -1,0 +1,23 @@
+// Mobile first(全環境に共通のデザイン)
+/* 画面サイズがsm(576px)以上の場合はここを読み込む */
+@mixin mb {
+  @media (min-width: ($mb)) {
+    @content;
+  }
+}
+
+// Tablet用として付け足すデザイン
+/* 画面サイズがsm(768px)以上の場合はここを読み込む */
+@mixin tb {
+  @media (min-width: ($tb)) {
+    @content;
+  }
+}
+
+// PC用として付け足すデザイン
+/* 画面サイズがxl(1024px)以上の場合はここを読み込む */
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}

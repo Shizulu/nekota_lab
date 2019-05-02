@@ -1,7 +1,101 @@
-div p {
-  font-weight: bold;
+@charset "UTF-8";
+html,
+body,
+main,
+section,
+article,
+aside,
+header,
+footer,
+address,
+nav,
+menu,
+time,
+form,
+input,
+iframe,
+label,
+div,
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  outline: 0;
 }
 
-h1 {
-  color: #ff0000;
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* 画面サイズがsm(576px)以上の場合はここを読み込む */
+/* 画面サイズがsm(768px)以上の場合はここを読み込む */
+/* 画面サイズがxl(1024px)以上の場合はここを読み込む */
+@media (min-width: 576px) {
+  body {
+    font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+  }
+  h1 {
+    color: #ff0000;
+  }
+  main {
+    background: #ff0000 none repeat scroll 0 0;
+    height: 500px;
+  }
+}
+
+/* 画面サイズがtb(768px)以上の場合はここを読み込む */
+@media (min-width: 768px) {
+  main {
+    background: #fff000 none repeat scroll 0 0;
+    height: 500px;
+  }
+}
+
+/* 画面サイズがpc(1024px)以上の場合はここを読み込む */
+@media (min-width: 1024px) {
+  main {
+    background: #bbbbbb none repeat scroll 0 0;
+    height: 500px;
+  }
 }

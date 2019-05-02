@@ -1,12 +1,72 @@
-div {
-  p {
-    font-weight: bold;
+// 自分の開発のために決めておきたいこと
+// ①先ず、要素を表示するの？しないの？（display）
+// ②要素を何処に配置するの？（position, float）
+// ③要素のボックスモデルはどうゆうものになるの？（border, margin, padding, width, height）
+// ④背景はどうなるの？（background）
+// ⑤テキストなど前景ににあるのもはどうなるの？（color, font-size, font-weight, text-align, vertical-align）
+//
+// --------
+// display
+// list-style
+// position
+// float
+// clear
+// width
+// height
+// margin
+// padding
+// border
+// background
+// color
+// font
+// text-decoration
+// text-align
+// vertical-align
+// white-space
+// other text
+// content
+// --------
+
+// インポート系
+@import "reset";
+@import "variable";
+@import "mixin";
+
+@include mb {
+  body {
+    font-family:"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+  }
+  h1 {
+    color: $fontColor;
+  }
+  main {
+    background:  #ff0000 none repeat scroll 0 0;
+    height: 500px;
   }
 }
 
-// 変数のテスト
-$fontColor: #ff0000;
 
-h1 {
-  color: $fontColor;
+
+
+
+
+// Tablet用として付け足すデザイン
+/* 画面サイズがtb(768px)以上の場合はここを読み込む */
+@include tb {
+  main {
+    background:  #fff000 none repeat scroll 0 0;
+    height: 500px;
+  }
+}
+
+
+// PC用として付け足すデザイン
+/* 画面サイズがpc(1024px)以上の場合はここを読み込む */
+@include pc {
+  main {
+    background:  #bbbbbb none repeat scroll 0 0;
+    height: 500px;
+  }
 }

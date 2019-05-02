@@ -1,0 +1,65 @@
+// リセット
+html,
+body,
+main,
+section,
+article,
+aside,
+header,
+footer,
+address,
+nav,
+menu,
+time,
+form,
+input,
+iframe,
+label,
+div,
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  outline: 0;
+}
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
