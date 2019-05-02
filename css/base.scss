@@ -32,20 +32,27 @@
 @import "variable";
 @import "mixin";
 
-@include mb {
-  body {
-    font-family:"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
-    font-size: 100%;
-    line-height: 1.5;
-  }
-  h1 {
-    color: $fontColor;
-  }
-  main {
-    background:  #ff0000 none repeat scroll 0 0;
-    height: 500px;
-  }
+// Mobile first(全環境に共通のデザイン)
+html {
+  background: #edfffe none repeat scroll 0 0;
+  color: #333;
 }
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family:"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+}
+main {
+  background:  #ff0000 none repeat scroll 0 0;
+}
+footer {
+  width: 100%;
+  text-align: center;
+}
+
 
 
 
@@ -57,7 +64,6 @@
 @include tb {
   main {
     background:  #fff000 none repeat scroll 0 0;
-    height: 500px;
   }
 }
 
@@ -65,8 +71,20 @@
 // PC用として付け足すデザイン
 /* 画面サイズがpc(1024px)以上の場合はここを読み込む */
 @include pc {
+  header {
+    h1 {
+      color: #08cee0;
+      font-family: 'Avenir Next', 'Century Gothic';
+      img {
+        width: 500px;
+      }
+    }
+  }
   main {
-    background:  #bbbbbb none repeat scroll 0 0;
-    height: 500px;
+    background:  #fff none repeat scroll 0 0;
+  }
+  footer {
+    color: #bbb;
+    font-size: 12px;
   }
 }
