@@ -72,12 +72,17 @@ footer {
 /* 画面サイズがpc(1024px)以上の場合はここを読み込む */
 @include pc {
   header {
+    padding: 24px;
     h1 {
       color: #08cee0;
       font-family: 'Avenir Next', 'Century Gothic';
       img {
-        width: 500px;
+        width: 380px;
       }
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: 1px;
     }
   }
   main {
